@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio – Lacon Mogoboya</title>
+  <!-- External CSS (Task 2 requirement) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══════════════ HEADER ═══════════════ -->
+  <header>
+    <div class="header-inner">
+      <a href="#home" class="logo">
+        <img src="icons8-graduation-cap-100.png" alt="Logo">
+        <span class="logo-text">Lacon Mogoboya</span>
+      </a>
+
+      <!-- Hamburger button (visible on mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <img src="hamburger-menu.png" alt="Menu">
+      </button>
+
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ═══════════════ HOME SECTION ═══════════════ -->
+  <section id="home" aria-label="Home">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Portfolio</p>
+      <h1>Lacon<br>Mogoboya</h1>
+      <p>Motivated problem-solver with experience spanning mathematics, engineering, and entrepreneurship — building toward a future under construction.</p>
+      <div class="hero-cta">
+        <a href="#about" class="btn btn-primary">About Me</a>
+        <a href="#contact" class="btn btn-outline">Contact Us</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="1000019075.png" alt="Portrait of Lacon Mogoboya">
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ═══════════════ ABOUT SECTION ═══════════════ -->
+  <section id="about" aria-label="About Me">
+    <p class="section-label">About Me</p>
+    <h2>Who I Am</h2>
+    <p>
+      A highly motivated individual with strong problem-solving, leadership, and organisational skills.
+      Previously pursued a BSc in Mathematics (Computer Sciences) at the University of Limpopo,
+      and a Diploma in Civil Engineering at the Vaal University of Technology (currently on hold).
+    </p>
+    <p>
+      Alongside my studies, I manage a registered business — demonstrating a high level of work ability,
+      the capacity to deliver results, and the initiative to lead both independently and within a team.
+    </p>
+    <p><strong>The road to my success is under construction.</strong></p>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ═══════════════ FOOTER / CONTACT ═══════════════ -->
+  <footer>
+    <div id="contact">
+
+      <!-- Address & email -->
+      <div class="contact-details">
+        <h3>Get in Touch</h3>
+        <p>
+          House 1990, W34 Lephepane<br>
+          Ga-Mogoboya, 0857<br>
+          Limpopo, South Africa
+        </p>
+        <a href="mailto:laconmogoboya@gmail.com" class="btn btn-primary" style="margin-top:1rem;">
+          Send Email
+        </a>
+        <p style="margin-top:0.75rem;">+27 62 523 0784</p>
+      </div>
+
+      <!-- Quick links -->
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Map -->
+      <div class="map-wrap">
+        <h3>Location</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d5761.35300588966!2d30.180037571688832!3d-24.004818613308483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDAwJzIyLjIiUyAzMMKwMTAnNTEuOCJF!5e1!3m2!1sen!2sza!4v1779192122109!5m2!1sen!2sza"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Map showing location in Limpopo">
+        </iframe>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Lacon Mogoboya. All rights reserved.</span>
+      <a href="https://www.linkedin.com/in/lacon-mogoboya/" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+        <img src="icons8-linkedin-50.png" alt="LinkedIn">
+      </a>
+    </div>
+  </footer>
+
+  <!-- Hamburger menu JavaScript -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('main-nav');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      hamburger.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Close menu when a nav link is clicked
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', false);
+      });
+    });
+  </script>
+
+</body>
+</html>
