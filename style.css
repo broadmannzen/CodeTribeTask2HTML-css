@@ -1,9 +1,4 @@
-/* ═══════════════════════════════════════════
-   style.css — Lacon Mogoboya Portfolio
-   Task 2: CSS + Responsiveness
-═══════════════════════════════════════════ */
 
-/* ── Google Fonts ── */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500&display=swap');
 
 /* ── CSS Variables (consistent colors, fonts, spacing) ── */
@@ -338,8 +333,8 @@ footer h3 {
 .footer-nav ul li a {
   text-decoration: none;
   color: #b8cfe0;
-  font-size: 0.95rem;
-  line-height: 2.2;
+  font-size: 0.7rem;
+  line-height: 2.0;
   transition: color var(--transition), padding-left var(--transition);
   display: inline-block;
 }
