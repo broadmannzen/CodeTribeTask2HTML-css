@@ -307,14 +307,14 @@ footer {
 
 footer h3 {
   font-family: var(--font-head);
-  font-size: 1.1rem;
+  font-size: 1.0rem;
   color: #fff;
   margin-bottom: 1rem;
 }
 
 .contact-details p,
 .contact-details a {
-  font-size: 0.95rem;
+  font-size: 0.7rem;
   line-height: 2;
   color: #b8cfe0;
   text-decoration: none;
@@ -367,7 +367,7 @@ footer h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   color: #7fa3bf;
 }
 
@@ -438,7 +438,7 @@ footer h3 {
   }
 
   nav ul li a {
-    font-size: 1.05rem;
+    font-size: 0.85rem;
     display: block;
     padding: 0.5rem 0;
   }
