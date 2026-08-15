@@ -334,7 +334,7 @@ footer h3 {
   text-decoration: none;
   color: #b8cfe0;
   font-size: 0.7rem;
-  line-height: 2.0;
+  line-height: 2;
   transition: color var(--transition), padding-left var(--transition);
   display: inline-block;
 }
@@ -438,7 +438,7 @@ footer h3 {
   }
 
   nav ul li a {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     display: block;
     padding: 0.5rem 0;
   }
